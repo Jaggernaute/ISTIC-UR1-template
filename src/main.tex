@@ -1,0 +1,148 @@
+\documentclass{config/homework}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{helvet}
+
+\title{\fontfamily{phv}\selectfont \{Course\}. \{Chapter\}.}
+\date{date}
+\author{name \\ ISTIC - Universite de Rennes 1, \textit{\thedate}}
+\version{1.0}
+
+
+\begin{document}
+
+
+    \begin{titlepage}
+
+        \maketitle
+
+        \begin{abstract}
+            \{
+            Quick description of the work done
+            \}
+        \end{abstract}
+        \vspace{5em}
+        \center\includegraphics{images/univ-logo}
+
+        \newpage
+
+        \tableofcontents
+
+        \vspace{5em}
+
+        \begin{contributors}
+            \vspace{.25em}
+            Redaction : \textbf{name} \\
+            Cours dispense par : \textbf{Prof. name} \\
+            Bibliographie : \textbf{Author}, Book\\
+            Travaux diriges : \textbf{Prof. name} \\
+            \vspace{.25em}
+        \end{contributors}
+
+    \end{titlepage}
+
+    \section{\{title\}}\label{sec:section}
+
+    \subsection{\{subtitle\}}\label{subsec:a}
+    Some text
+    \newpage
+
+    \section{Useful stuff}\label{sec:section2}
+    \subsection{mats stuff:}\label{subsec:b}
+    % list of useful math commands and symbols
+
+    Linear algebra:
+
+    \[
+    \begin{array}{l}
+        \text{Matrix: } A =
+        \begin{pmatrix}
+            a_{11} & a_{12} & \cdots & a_{1n} \\
+            a_{21} & a_{22} & \cdots & a_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{m1} & a_{m2} & \cdots & a_{mn}
+        \end{pmatrix}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+    \text{Vector: } \mathbf{v} =
+        \begin{pmatrix}
+        v_1 \\
+        v_2 \\
+        \vdots \\
+        v_n
+        \end{pmatrix}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+    \text{Transpose: } A^T =
+        \begin{pmatrix}
+            a_{11} & a_{21} & \cdots & a_{m1} \\
+            a_{12} & a_{22} & \cdots & a_{m2} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{1n} & a_{2n} & \cdots & a_{mn}
+        \end{pmatrix}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+    \text{Inverse: } A^{-1} =
+        \begin{pmatrix}
+            a_{11} & a_{12} & \cdots & a_{1n} \\
+            a_{21} & a_{22} & \cdots & a_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{m1} & a_{m2} & \cdots & a_{mn}
+        \end{pmatrix}
+    \end{array}
+    \]
+
+
+\[
+\begin{array}{l}
+    \text{Determinant: }
+    \det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i \sigma(i)}
+\end{array}
+\]
+
+    \[
+    \begin{array}{l}
+        \text{Trace: }
+        \text{tr}(A) = \sum_{i=1}^n a_{ii}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+        \text{Rank: }
+        \text{rank}(A) = \text{rank}(A^T) = \text{rank}(A^*)
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+        \text{Null space: }
+        \text{N}(A) = \{ \mathbf{x} \in \mathbb{R}^n \mid A \mathbf{x} = \mathbf{0} \}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+        \text{Column space: }
+        \text{C}(A) = \{ \mathbf{y} \in \mathbb{R}^m \mid A^T \mathbf{y} = \mathbf{0} \}
+    \end{array}
+    \]
+
+    \[
+    \begin{array}{l}
+        \text{Row space: }
+        \text{R}(A) = \{ \mathbf{y} \in \mathbb{R}^n \mid A \mathbf{y} = \mathbf{0} \}
+    \end{array}
+    \]
+
+    \newpage
+\end{document}
